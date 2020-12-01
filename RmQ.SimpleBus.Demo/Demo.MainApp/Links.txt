@@ -1,0 +1,76 @@
+﻿https://github.com/WolfgangOfner/MicroserviceDemo/blob/master/OrderApi/OrderApi.Messaging.Receive/Receiver/v1/CustomerFullNameUpdateReceiver.cs
+
+https://www.programmingwithwolfgang.com/rabbitmq-in-an-asp-net-core-3-1-microservice/
+
+https://masstransit-project.com/
+
+https://www.rabbitmq.com/tutorials/tutorial-one-dotnet.html
+
+https://docs.microsoft.com/ru-ru/dotnet/api/microsoft.extensions.logging.ilogger?view=dotnet-plat-ext-5.0
+
+https://docs.microsoft.com/ru-ru/azure/architecture/patterns/priority-queue
+
+https://docs.microsoft.com/ru-ru/dotnet/architecture/microservices/multi-container-microservice-net-applications/rabbitmq-event-bus-development-test-environment
+
+https://www.c-sharpcorner.com/article/publishing-rabbitmq-message-in-asp-net-core/
+
+https://medium.com/trimble-maps-engineering-blog/getting-started-with-net-core-docker-and-rabbitmq-part-1-a62601e784bb
+
+https://metanit.com/sharp/aspnet5/2.10.php
+
+https://entityframeworkcore.com/saving-data-transaction
+
+https://www.entityframeworktutorial.net/efcore/changetracker-in-ef-core.aspx
+
+https://habr.com/ru/post/447412/
+
+https://docs.microsoft.com/ru-ru/archive/msdn-magazine/2016/august/data-points-ef-core-change-tracking-behavior-unchanged-modified-and-added
+
+# именование очередей
+https://blog.byndyusoft.com/%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC%D0%B8-%D0%B2-%D0%BC%D0%B8%D0%BA%D1%80%D0%BE%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D0%BD%D0%BE%D0%B9-%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B5-412fb6b7e6f8
+
+https://iqsystems.ru/master-data-basics-article/
+
+# is4
+https://code-maze.com/identityserver4-ui-webapi-basic-security/
+https://www.scottbrady91.com/Identity-Server/ASPNET-Core-Swagger-UI-Authorization-using-IdentityServer4
+
+
+# конфиги
+https://docs.microsoft.com/ru-ru/dotnet/core/tools/dotnet-new
+
+# фабрика подключение
+https://docs.microsoft.com/ru-ru/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests
+
+https://docs.microsoft.com/ru-ru/ef/core/managing-schemas/ensure-created
+https://docs.microsoft.com/ru-ru/aspnet/core/data/ef-mvc/migrations?view=aspnetcore-5.0
+
+https://docs.microsoft.com/ru-ru/ef/core/miscellaneous/connection-resiliency
+
+https://docs.microsoft.com/ru-ru/ef/core/saving/transactions
+
+https://docs.microsoft.com/ru-ru/ef/core/saving/disconnected-entities
+
+https://docs.microsoft.com/ru-ru/ef/core/saving/explicit-values-generated-properties
+
+https://docs.microsoft.com/ru-ru/ef/core/dbcontext-configuration/
+
+https://docs.microsoft.com/ru-ru/dotnet/standard/serialization/system-text-json-how-to?pivots=dotnet-core-3-1
+
+https://docs.microsoft.com/ru-ru/dotnet/architecture/microservices/implement-resilient-applications/implement-resilient-entity-framework-core-sql-connections
+
+# обзор
+https://habr.com/ru/company/microsoft/blog/508622/
+
+# мониторинг
+https://docs.microsoft.com/ru-ru/dotnet/architecture/microservices/implement-resilient-applications/monitor-app-health
+https://docs.microsoft.com/ru-ru/dotnet/core/tools/telemetry
+
+https://dotnet.microsoft.com/download/visual-studio-sdks?utm_source=getdotnetsdk&utm_medium=referral
+https://docs.microsoft.com/ru-ru/dotnet/core/versions/selection
+https://docs.microsoft.com/ru-ru/dotnet/standard/frameworks
+https://docs.microsoft.com/ru-ru/dotnet/core/tools/csproj
+https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2019
+
+# rabbitMQ
+https://docs.google.com/document/d/1KPlBTxE06jc-tqD3EkD7h_CeXF80biL5C6WhEtKRDJ8/edit
