@@ -1,0 +1,41 @@
+version: '3.4'
+
+services:
+  demo.mainapp:
+    image: ${DOCKER_REGISTRY-}demomainapp
+    container_name: notificator
+    build:
+      context: .
+      dockerfile: Demo.MainApp/Dockerfile
+    restart: on-failure
+    ports:
+      - 5000:80
+      - 5001:443
+    depends_on:
+      - rabbitmq
+
+  rabbitmq:
+   image: rabbitmq:3-management
+   container_name: rabbitmq
+   restart: always
+   ports:
+     - 5672:5672
+     - 15672:15672
+   environment:
+     - RABBITMQ_DEFAULT_USER=admin
+     - RABBITMQ_DEFAULT_PASS=P@ssw0rd
+   volumes:
+     - rabbitmq_data
+
+  demo.clientnotifier.demo:
+    image: ${DOCKER_REGISTRY-}democlientnotifierdemo
+    container_name: client_sender
+    ports:
+      - 4000:80
+      - 4001:443
+    build:
+      context: .
+      dockerfile: Demo.ClientNotifier.Demo/Dockerfile
+    restart: on-failure
+    depends_on:
+      - rabbitmq

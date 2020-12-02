@@ -2,12 +2,15 @@
 using Newtonsoft.Json;
 using RabbitMQ.Client;
 using System;
+using System.Collections.Generic;
 using System.Text;
 
 namespace Demo.MainApp.PriorityQueue
 {
 	public sealed class PriorityQueueRmQ<TData>
 	{
+		private readonly Random _random = new Random();
+
 		private readonly string _hostname;
 		private readonly string _password;
 		private readonly string _queueName;
@@ -15,12 +18,17 @@ namespace Demo.MainApp.PriorityQueue
 
 		private IConnection _connection;
 
+		private readonly Dictionary<string, object> _arguments;
+
 		public PriorityQueueRmQ(IOptions<RabbitMqConfiguration> rabbitMqOptions)
 		{
 			_queueName = rabbitMqOptions.Value.QueueName;
 			_hostname = rabbitMqOptions.Value.Hostname;
 			_username = rabbitMqOptions.Value.UserName;
 			_password = rabbitMqOptions.Value.Password;
+
+			_arguments = new Dictionary<string, object>(1);
+			_arguments.Add("x-max-priority", 3);
 
 			CreateConnection();
 		}
@@ -31,10 +39,13 @@ namespace Demo.MainApp.PriorityQueue
 			{
 				using (var channel = _connection.CreateModel())
 				{
-					channel.QueueDeclare(queue: _queueName, durable: false, exclusive: false, autoDelete: false, arguments: null);
+					channel.QueueDeclare(queue: _queueName, durable: true, exclusive: false, autoDelete: false, arguments: _arguments);
 
 					var json = JsonConvert.SerializeObject(data);
 					var body = Encoding.UTF8.GetBytes(json);
+
+					var properties = channel.CreateBasicProperties();
+					properties.Priority = (byte)_random.Next(1, 3);
 
 					channel.BasicPublish(exchange: "", routingKey: _queueName, basicProperties: null, body: body);
 				}

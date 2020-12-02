@@ -24,6 +24,9 @@ namespace Demo.MainApp
 
             services.Configure<RabbitMqConfiguration>(Configuration.GetSection("RabbitMq"));
 
+            services.AddHostedService<PriorityQueueReaderService>();
+            services.AddSingleton<PriorityQueueRmQ<Notifaction>>();
+
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -37,11 +40,12 @@ namespace Demo.MainApp
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Demo.MainApp v1"));
             }
 
             app.UseHttpsRedirection();
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Demo.MainApp v1"));
 
             app.UseRouting();
 
