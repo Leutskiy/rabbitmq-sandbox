@@ -1,0 +1,17 @@
+﻿http://codereform.com/blog/post/net-core-and-rabbitmq/
+http://codereform.com/blog/post/net-core-and-rabbitmq-part-2-communication-via-amqp/
+https://www.amazon.co.uk/RabbitMQ-Depth-Gavin-M-Roy/dp/1617291005
+
+https://gigi.nullneuron.net/gigilabs/asynchronous-rabbitmq-consumers-in-net/
+
+https://www.rabbitmq.com/dotnet-api-guide.html#consuming-async
+
+https://devblogs.microsoft.com/dotnet/an-introduction-to-system-threading-channels/
+https://www.c-sharpcorner.com/article/create-a-long-running-task-in-c-sharp-net-core/
+https://docs.microsoft.com/ru-ru/aspnet/core/performance/performance-best-practices?view=aspnetcore-5.0
+https://docs.microsoft.com/ru-ru/aspnet/core/fundamentals/host/hosted-services?view=aspnetcore-5.0&tabs=visual-studio
+
+https://makolyte.com/aspdotnet-how-to-use-a-backgroundservice-for-long-running-and-periodic-tasks/
+https://makolyte.com/aspnet-async-sse-endpoint/
+https://www.c-sharpcorner.com/article/using-net-core-with-rabbitmq-for-async-operations/
+https://medium.com/@saurabh.singh0829/async-queue-implementation-using-rabbitmq-net-core-reactjs-12d98f9745dc

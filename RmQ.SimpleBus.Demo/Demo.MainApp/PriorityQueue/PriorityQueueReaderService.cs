@@ -22,7 +22,7 @@ namespace Demo.MainApp.PriorityQueue
 
         private readonly ILogger<PriorityQueueReaderService> _logger;
 
-        public PriorityQueueReaderService(IOptions<RabbitMqConfiguration> rabbitMqOptions, ILogger<PriorityQueueReaderService> logger)
+        public PriorityQueueReaderService(IOptions<RabbitMqConfiguration> rabbitMqOptions, ILogger<PriorityQueueReaderService> logger, ICloneable conta)
         {
             _logger = logger;
 
